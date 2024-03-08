@@ -1,5 +1,5 @@
-describe("Hw 014 test 1", () => {
-  it("Test1", () => {
+describe("Test different cases", () => {
+  it("checkStepsTest", () => {
     cy.visit("pages/layout/stepper")
     cy.get("nb-card.col-md-12").as("stepper")
     cy.get('@stepper').find("h3.ng-star-inserted").should('have.text', 'Step content #1')
@@ -8,7 +8,7 @@ describe("Hw 014 test 1", () => {
       cy.get('@stepper').find("h3.ng-star-inserted").should('have.text', `Step content #${i}`)
     }
   })
-  it("Test2", () => {
+  it("checkModalFormTest", () => {
     cy.visit("pages/modal-overlays/dialog")
     cy.get("nb-card.form-input-card").as("returnResultFromDialog")
     cy.get('@returnResultFromDialog').find("button").click();
