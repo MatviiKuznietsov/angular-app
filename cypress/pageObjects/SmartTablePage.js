@@ -13,21 +13,21 @@ export default class SmartTablePage {
     this.fieldUserName.type(userName)
     this.fieldEmail.type(email)
     this.fieldAge.type(age)
-    return new SmartTablePage()
+    return this
   }
 
   clickBtnAddNewUser() {
     this.btnAddNewUser.click()
-    return new SmartTablePage()
+    return this
   }
   clickBtnSubmitChanges() {
     this.btnSubmitChanges.click()
-    return new SmartTablePage()
+    return this
   }
 
   clickBtnEdit() {
     this.btnEdit.click()
-    return new SmartTablePage()
+    return this
   }
 
 

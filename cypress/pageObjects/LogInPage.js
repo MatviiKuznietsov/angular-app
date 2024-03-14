@@ -10,7 +10,7 @@ export default class LogInPage {
     this.emailInput.type(email);
     this.passwordInput.type(password);
     this.checkBox.click();
-    return new LogInPage();
+    return this;
   }
 
   get emailInput() {

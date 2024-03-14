@@ -6,7 +6,7 @@ describe("Modal Form Tests", () => {
     logInPage.navigate()
   })
   it("checkModalFormTest", () => {
-    const urlDashboard = 'http://localhost:4200/pages/dashboard'
+    const urlDashboard = 'pages/dashboard'
 
     const userData = {
       email: "Hello@mail.com",
